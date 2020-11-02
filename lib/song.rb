@@ -34,13 +34,12 @@ class Song
   end
 
   def self.find_or_create_by_name(title)
-    answer = self.all.detect {|s| s.name == title}
-    answer
+    answer = self.find_by_name(title)
     if answer == false
       self.all << answer
     end
   end
-  
+
 
 
 end
