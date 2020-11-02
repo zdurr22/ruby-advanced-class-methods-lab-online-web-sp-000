@@ -38,7 +38,7 @@ class Song
     if answer
       answer
     else
-      self.create_by_name
+      self.create_by_name(title)
     end
   end
 
