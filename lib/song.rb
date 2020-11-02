@@ -28,4 +28,10 @@ class Song
     song
   end
 
+  def self.find_by_name(title)
+    answer = self.all.detect {|s| s.name == title}
+    answer
+  end
+
+
 end
