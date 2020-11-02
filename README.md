@@ -29,7 +29,7 @@ class Song
     song = @name
     self.all << song
   end
-    
+
 
 end
 ```
