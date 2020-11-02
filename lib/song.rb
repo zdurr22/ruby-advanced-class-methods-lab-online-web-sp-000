@@ -36,7 +36,7 @@ class Song
   def self.find_or_create_by_name(title)
     answer = self.find_by_name(title)
     if answer == false
-      self.all << answer
+      self.create_by_name
     end
   end
 
