@@ -33,5 +33,14 @@ class Song
     answer
   end
 
+  def self.find_or_create_by_name(title)
+    answer = self.all.detect {|s| s.name == title}
+    answer
+    if answer == false
+      self.all << answer
+    end
+  end
+  
+
 
 end
