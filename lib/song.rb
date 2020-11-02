@@ -42,6 +42,11 @@ class Song
     end
   end
 
+  def self.alphabetical
+    finished = self.all.sort_by {|s| s.name}
+    finished
+  end
+  
 
 
 end
